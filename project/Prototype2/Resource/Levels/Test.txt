@@ -1,0 +1,7 @@
+Transform
+0.0 0.0 0.0
+Asset
+FBX
+gh_sample_animation.fbx
+Animation
+Controller

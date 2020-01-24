@@ -1,0 +1,544 @@
+{
+  "Level3": [
+    {
+      "DataFile": "HitBoxH",
+      "Transform": {
+        "Translate": [ 0.0, 0.0, 15.0 ]
+      }
+    },
+    {
+      "DataFile": "HitBoxV",
+      "Transform": {
+        "Translate": [ 5.0, 0.0, 15.0 ]
+      }
+    },
+    {
+      "DataFile": "Player",
+      "Transform": {
+        "Translate": [ 5, -48, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Heli",
+      "Transform": {
+        "Translate": [ 0, 0, 20.0 ]
+      }
+    },
+    {
+      "DataFile": "DirectLight",
+      "Transform": {
+        "Translate": [ 0.0, 0.0, 200.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, 0.0, 4.0 ],
+        "Scale": [ 0.0, 0.0, 0.0 ]
+      },
+      "Body": {
+        "BScale": [ 100.0, 100.0, 1.0 ]
+      }
+    },
+
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 40, -31.25, 6.0 ],
+        "Scale": [ 17.5, 3.75, 2 ]
+      },
+      "Body": {
+        "BScale": [ 17.5, 3.75, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 10, -30.0, 6.0 ],
+        "Scale": [ 15, 2.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 15, 2.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 1.25, -33.75, 6.0 ],
+        "Scale": [ 2.5, 10, 2 ]
+      },
+      "Body": {
+        "BScale": [ 2.5, 10, 2 ]
+      }
+
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 28.75, -43.75, 6.0 ],
+        "Scale": [ 42.5, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 42.5, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -22.5, -43.75, 6.0 ],
+        "Scale": [ 50, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 50, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, -52.5, 6.0 ],
+        "Scale": [ 0.0, 0.0, 0.0 ]
+      },
+      "Body": {
+        "BScale": [ 100.0, 5.0, 10.0 ]
+      },
+
+      "Asset": {
+        "Shape": "Box",
+        "Texture": "gate.jpg"
+
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, 52.5, 6.0 ],
+        "Scale": [ 100.0, 5.0, 10.0 ]
+      },
+      "Body": {
+        "BScale": [ 100.0, 5.0, 10.0 ]
+      },
+      "Asset": {
+        "Shape": "Box",
+        "Texture": "gate.jpg"
+
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -52.5, 0.0, 6.0 ],
+        "Scale": [ 5.0, 100.0, 10.0 ]
+      },
+      "Body": {
+        "BScale": [ 5.0, 100.0, 10.0 ]
+      },
+      "Asset": {
+        "Shape": "Box",
+        "Texture": "gate.jpg"
+
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 52.5, 0.0, 6.0 ],
+        "Scale": [ 5.0, 100.0, 10.0 ]
+      },
+      "Body": {
+        "BScale": [ 5.0, 100.0, 10.0 ]
+      },
+
+      "Asset": {
+        "Shape": "Box",
+        "Texture": "gate.jpg"
+
+      }
+    },
+
+    {
+      "DataFile": "FirePlace",
+      "Transform": {
+        "Translate": [ 0.0, 0.0, 4 ],
+        "Scale": [ 120.0, 100.0, 1.0 ]
+      },
+      "Asset": {
+        "Shape": "FBX",
+        "Model": "Paving_Stone.fbx",
+        "Rotated": false,
+        "MaterialID": 0,
+        "Texture": "TexturesCom_DamagedRubber_0.5x0.5_1K_albedo.tif"
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 23.75, -25.0, 6.0 ],
+        "Scale": [ 5.0, 15.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 5.0, 15.0, 2 ]
+      }
+
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 32.5, -20.0, 6.0 ],
+        "Scale": [ 15.0, 5.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 15.0, 5.0, 2 ]
+      }
+
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 33.75, -2.5, 6.0 ],
+        "Scale": [ 10.0, 18.75, 2 ]
+      },
+      "Body": {
+        "BScale": [ 10.0, 18.75, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 7.5, -11.25, 6.0 ],
+        "Scale": [ 18.75, 6.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 18.75, 6.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 8.0, -20.0, 6.0 ],
+        "Scale": [ 6.25, 11.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 6.25, 11.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 17.5, -1.75, 6.0 ],
+        "Scale": [ 8.75, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 8.75, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 27.5, 13.75, 6.0 ],
+        "Scale": [ 32.5, 5.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 32.5, 5.0, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 40.0, 30.0, 6.0 ],
+        "Scale": [ 7.5, 18.75, 2 ]
+      },
+      "Body": {
+        "BScale": [ 7.5, 18.75, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 27.5, 33.75, 6.0 ],
+        "Scale": [ 17.5, 5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 17.5, 5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 20.0, 25.0, 6.0 ],
+        "Scale": [ 20.0, 5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 20.0, 5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 2.5, 0.625, 6.0 ],
+        "Scale": [ 12.5, 8.75, 2 ]
+      },
+      "Body": {
+        "BScale": [ 12.5, 8.75, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 27.5, 45, 6.0 ],
+        "Scale": [ 12.5, 8.75, 2 ]
+      },
+      "Body": {
+        "BScale": [ 12.5, 8.75, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 11.25, 37.5, 6.0 ],
+        "Scale": [ 6.25, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 6.25, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 1.875, 41.25, 6.0 ],
+        "Scale": [ 12.5, 5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 12.5, 5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, 30.0, 6.0 ],
+        "Scale": [ 7.5, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 7.5, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -6.25, -27.5, 6.0 ],
+        "Scale": [ 6.25, 20, 2 ]
+      },
+      "Body": {
+        "BScale": [ 6.25, 20, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 1.75, 15, 6.0 ],
+        "Scale": [ 12.5, 11.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 12.5, 11.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -18.75, -27.5, 6.0 ],
+        "Scale": [ 20.0, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 20.0, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -25.0, -11.25, 6.0 ],
+        "Scale": [ 37.5, 6.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 37.5, 6.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -37.5, -23.75, 6.0 ],
+        "Scale": [ 7.5, 18.75, 2 ]
+      },
+      "Body": {
+        "BScale": [ 7.5, 18.75, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -12.5, 6.25, 6.0 ],
+        "Scale": [ 7.5, 7.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 7.5, 7.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -22.5, 0.0, 6.0 ],
+        "Scale": [ 6.25, 16.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 6.25, 16.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -10, -5.0, 6.0 ],
+        "Scale": [ 7.5, 7.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 7.5, 7.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -42.5, 0.0, 6.0 ],
+        "Scale": [ 15.0, 7.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 15.0, 7.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -11.0, 12.5, 6.0 ],
+        "Scale": [ 12.5, 5.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 12.5, 5.0, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -30.0, 10.5, 6.0 ],
+        "Scale": [ 21.25, 5.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 21.25, 5.0, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -41.25, 18.75, 6.0 ],
+        "Scale": [ 15.0, 6.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 15.0, 6.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -25.0, 18.75, 6.0 ],
+        "Scale": [ 8.750, 6.25, 2 ]
+      },
+      "Body": {
+        "BScale": [ 8.750, 6.25, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -10.0, 33.75, 6.0 ],
+        "Scale": [ 12.5, 5.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 12.5, 5.0, 2 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -13.75, 25.0, 6.0 ],
+        "Scale": [ 6.25, 12.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 6.25, 12.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "P3Trap",
+      "Transform": {
+        "Translate": [ 32.7, -14.7, 4.0 ],
+        "Scale": [ 5.0, 4.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 5.0, 4.0, 2 ]
+      }
+    },
+    {
+      "DataFile": "P3Goal",
+      "Transform": {
+        "Translate": [ -31, 38, 6.0 ],
+        "Scale": [ 0, 0, 0 ]
+      },
+      "Body": {
+        "BScale": [ 20, 15, 4 ]
+      }
+    },
+    {
+      "DataFile": "FirePlace",
+      "Transform": {
+        "Translate": [ -31, 30, 6.0 ],
+        "Scale": [ 40, 30, 40 ]
+      },
+      "Asset": {
+        "Shape": "Obj",
+        "Model": "templo.obj",
+        "Rotated": true,
+        "Diffuse": [ 1, 1, 1 ]
+      }
+    },
+    {
+      "DataFile": "P3Trap",
+      "Transform": {
+        "Translate": [ 44.5, 0, 4.0 ],
+        "Scale": [ 8.7, 4.0, 2 ]
+      },
+      "Body": {
+        "BScale": [ 8.7, 4.0, 2 ]
+      }
+    },
+    {
+      "DataFile": "P3Trap",
+      "Transform": {
+        "Translate": [ 17.7, 8.2, 4.0 ],
+        "Scale": [ 4.5, 5.5, 2 ]
+      },
+      "Body": {
+        "BScale": [ 4.5, 5.5, 2 ]
+      }
+    },
+    {
+      "DataFile": "P3Trap",
+      "Transform": {
+        "Translate": [ 19.9, 41.1, 4.0 ],
+        "Scale": [ 5.8, 6, 2 ]
+      },
+      "Body": {
+        "BScale": [ 5.8, 6, 2 ]
+      }
+    }
+
+
+
+
+
+
+  ]
+}

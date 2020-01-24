@@ -1,0 +1,14 @@
+{
+  "Cat": {
+    "Transform": {
+      "Scale": [ 2.0, 2.0, 2.0 ],
+      "Translate": [ 0.0, 0.0, 0.0 ]
+    },
+    "Asset": {
+      "Shape": "Obj",
+      "Model": "exc.obj",
+      "Rotated": true,
+      "MaterialID": 0
+    }
+  }
+}

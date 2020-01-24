@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{bd5eea29-068c-4d73-afc8-077b0bd9792b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Manager\GraphicsManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\TimerManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DXObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DXShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DXTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Shape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\DXInputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DirectXHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Asset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\GameObjectManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\PhysicsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameStates\PlayState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\ObjectFactoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation\AnimationChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation\BoneNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation\AnimationClips.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\MemoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\MoveEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\DestroyEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\CollisionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\Vector3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\ShapeX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\ScriptManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\ShadowShading\Shadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DeferredRendering\DeferredRendering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Audio\AudioSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\AudioManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\jsoncpp\jsoncpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\ImGUIManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\LevelEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\SpatialGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Cat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Heli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\FirePlace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Nanosuit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Fish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameStates\PauseState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\GameStateManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\HealthBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\HitboxH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\HitBoxV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\WEnemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\ViewBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\SpotBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\LightDetail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\SpotLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\DirectLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\PointLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Seeker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\SeekerBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P1Collectible.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P1Goal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P3Trap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\TimeBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P3Goal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Manager\GraphicsManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\TimerManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\DXObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\DXShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\DXTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\DXInputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\ReadData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\DirectXHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Asset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Body.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Systems\Systems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Lua\Include\lauxlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Lua\Include\lua.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Lua\Include\lua.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Lua\Include\luaconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Lua\Include\lualib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\GameObjectManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\PhysicsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameStates\PlayState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameStates\GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\ObjectFactoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Animation\AnimationChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Animation\BoneNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\as_args.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\as_returns.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\base_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\bind_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\bytecode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\call.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\compatibility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\config_setup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\coroutine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\debug.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\demangle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\deprecate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\dump_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\ebco.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\environment.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\error.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\error_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\feature_test.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\forward_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_result.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_types_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_types_overloaded.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_types_stateful.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_types_stateless.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\function_types_templated.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\inheritance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\in_place.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\load_result.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\lua_table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\lua_value.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\make_reference.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\metatable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\object_base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\optional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\optional_implementation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\overload.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\pointer_like.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\policies.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\property.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\protect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\protected_function.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\protected_function_result.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\protected_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\proxy_base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\raii.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\reference.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\resolve.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\sol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_check.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get_qualified.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get_unqualified.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_qualified.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_unqualified.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_field.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_get.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_get_qualified.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_get_unqualified.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_guard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_iterator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_pop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_probe.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_proxy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_proxy_base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_push.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\stack_reference.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\state_handling.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\state_view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\string_view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\table_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\table_iterator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\table_proxy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\tie.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\trampoline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\tuple.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\unicode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\unique_usertype_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\unsafe_function.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\unsafe_function_result.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\userdata.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype_container.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype_container_launch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype_proxy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype_storage.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\usertype_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\variadic_args.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\variadic_results.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Sol\Include\wrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\ScriptManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\MemoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\DestroyEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\MoveEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Animation\AnimationClips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\ShapeX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Vector3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\ShadowShading\Shadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\DeferredRendering\DeferredRendering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\CollisionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Audio\AudioSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\AudioManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jsoncpp\json\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\jsoncpp\json\json-forwards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imgui_impl_dx11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imgui_impl_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGUI\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\ImGUIManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\LevelEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\SpatialGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Cat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Heli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\FirePlace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Collider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\LevelEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Nanosuit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Fish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameStates\PauseState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\GameStateManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\HealthBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\HitboxH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\HitBoxV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Levels\HitBoxV.json">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\WEnemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\ViewBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\SpotBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\LightDetail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\SpotLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\DirectLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\PointLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\Seeker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\SeekerBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\P1Goal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\P1Collectible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\P3Trap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\TimeBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity\P3Goal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resource\Shader\DeferredAmbientPShader.hlsl" />
+    <FxCompile Include="Resource\Shader\DeferredVertexShader.hlsl" />
+    <FxCompile Include="Resource\Shader\DefferedGbufferPShader.hlsl" />
+    <FxCompile Include="Resource\Shader\DefferedLightPShader.hlsl" />
+    <FxCompile Include="Resource\Shader\ShadowPShader.hlsl" />
+    <FxCompile Include="Resource\Shader\SimplePShader.hlsl" />
+    <FxCompile Include="Resource\Shader\SimpleVShader.hlsl" />
+    <FxCompile Include="Resource\Shader\AnimationVShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependencies\ImGUI\imgui.cpp" />
+    <ClCompile Include="Dependencies\ImGUI\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\ImGUI\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\ImGUI\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Dependencies\ImGUI\imgui_impl_win32.cpp" />
+    <ClCompile Include="Dependencies\ImGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\jsoncpp\jsoncpp.cpp" />
+    <ClCompile Include="Manager\GameStateManager.cpp" />
+    <ClCompile Include="Manager\AudioManager.cpp" />
+    <ClCompile Include="Manager\ImGUIManager.cpp" />
+    <ClCompile Include="Manager\LevelEditor.cpp" />
+    <ClCompile Include="Source\Audio\AudioSystem.cpp" />
+    <ClCompile Include="Source\Entity\Block.cpp" />
+    <ClCompile Include="Source\Entity\Bullet.cpp" />
+    <ClCompile Include="Source\Entity\Collider.cpp" />
+    <ClCompile Include="Source\Entity\Cat.cpp" />
+    <ClCompile Include="Source\Entity\Enemy.cpp" />
+    <ClCompile Include="Source\Entity\Entity.cpp" />
+    <ClCompile Include="Source\Entity\FirePlace.cpp" />
+    <ClCompile Include="Source\Entity\Fish.cpp" />
+    <ClCompile Include="Source\Entity\HealthBar.cpp" />
+    <ClCompile Include="Source\Entity\Heli.cpp" />
+    <ClCompile Include="Source\Entity\HitboxH.cpp" />
+    <ClCompile Include="Source\Entity\HitBoxV.cpp" />
+    <ClCompile Include="Source\Entity\Nanosuit.cpp" />
+    <ClCompile Include="Source\Entity\P1Collectible.cpp" />
+    <ClCompile Include="Source\Entity\P1Goal.cpp" />
+    <ClCompile Include="Source\Entity\Platform.cpp" />
+    <ClCompile Include="Source\Entity\Player.cpp" />
+    <ClCompile Include="Source\Entity\Tree.cpp" />
+    <ClCompile Include="Source\GameStates\PauseState.cpp" />
+    <ClCompile Include="Source\Graphics\DeferredRendering\DeferredRendering.cpp" />
+    <ClCompile Include="Source\Graphics\ShadowShading\Shadow.cpp" />
+    <ClCompile Include="Source\Components\Animation.cpp" />
+    <ClCompile Include="Manager\CollisionManager.cpp" />
+    <ClCompile Include="Manager\GameObjectManager.cpp" />
+    <ClCompile Include="Manager\MemoryManager.cpp" />
+    <ClCompile Include="Manager\ObjectFactoryManager.cpp" />
+    <ClCompile Include="Manager\PhysicsManager.cpp" />
+    <ClCompile Include="Manager\ResourceManager.cpp" />
+    <ClCompile Include="Manager\ScriptManager.cpp" />
+    <ClCompile Include="Source\Events\DestroyEvent.cpp" />
+    <ClCompile Include="Source\Events\MoveEvent.cpp" />
+    <ClCompile Include="Source\GameStates\PlayState.cpp" />
+    <ClCompile Include="Source\Graphics\Animation\AnimationClips.cpp" />
+    <ClCompile Include="Source\Graphics\Animation\AnimationChannel.cpp" />
+    <ClCompile Include="Source\Graphics\Animation\BoneNode.cpp" />
+    <ClCompile Include="Source\Graphics\Light.cpp" />
+    <ClCompile Include="Manager\DXInputManager.cpp" />
+    <ClCompile Include="Source\Components\Asset.cpp" />
+    <ClCompile Include="Source\Components\Body.cpp" />
+    <ClCompile Include="Source\Components\Component.cpp" />
+    <ClCompile Include="Source\Components\Controller.cpp" />
+    <ClCompile Include="Source\Components\Transform.cpp" />
+    <ClCompile Include="Source\Graphics\Camera.cpp" />
+    <ClCompile Include="Source\Graphics\DirectXHandler.cpp" />
+    <ClCompile Include="Source\Graphics\DXObject.cpp" />
+    <ClCompile Include="Source\Graphics\DXShader.cpp" />
+    <ClCompile Include="Source\Graphics\DXTexture.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Manager\GraphicsManager.cpp" />
+    <ClCompile Include="Manager\TimerManager.cpp" />
+    <ClCompile Include="Source\pch.cpp" />
+    <ClCompile Include="Source\Util\Math.cpp" />
+    <ClCompile Include="Source\Graphics\Shape.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Util\ShapeX.cpp" />
+    <ClCompile Include="Source\Util\SpatialGrid.cpp" />
+    <ClCompile Include="Source\Util\Vector3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\ImGUI\imconfig.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui_impl_dx11.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui_impl_win32.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui_internal.h" />
+    <ClInclude Include="Dependencies\ImGUI\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\ImGUI\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\ImGUI\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\jsoncpp\json\json-forwards.h" />
+    <ClInclude Include="Dependencies\jsoncpp\json\json.h" />
+    <ClInclude Include="Manager\GameStateManager.h" />
+    <ClInclude Include="Manager\AudioManager.h" />
+    <ClInclude Include="Manager\ImGUIManager.h" />
+    <ClInclude Include="Manager\LevelEditor.h" />
+    <ClInclude Include="Resource\Levels\HitBoxV.json" />
+    <ClInclude Include="Source\Audio\AudioSystem.h" />
+    <ClInclude Include="Source\Entity\Block.h" />
+    <ClInclude Include="Source\Entity\Bullet.h" />
+    <ClInclude Include="Source\Entity\Cat.h" />
+    <ClInclude Include="Source\Entity\Collider.h" />
+    <ClInclude Include="Source\Entity\Enemy.h" />
+    <ClInclude Include="Source\Entity\Entity.h" />
+    <ClInclude Include="Source\Entity\FirePlace.h" />
+    <ClInclude Include="Source\Entity\Fish.h" />
+    <ClInclude Include="Source\Entity\HealthBar.h" />
+    <ClInclude Include="Source\Entity\Heli.h" />
+    <ClInclude Include="Source\Entity\HitboxH.h" />
+    <ClInclude Include="Source\Entity\HitBoxV.h" />
+    <ClInclude Include="Source\Entity\Nanosuit.h" />
+    <ClInclude Include="Source\Entity\P1Collectible.h" />
+    <ClInclude Include="Source\Entity\P1Goal.h" />
+    <ClInclude Include="Source\Entity\Platform.h" />
+    <ClInclude Include="Source\Entity\Player.h" />
+    <ClInclude Include="Manager\CollisionManager.h" />
+    <ClInclude Include="Source\Entity\Tree.h" />
+    <ClInclude Include="Source\GameStates\PauseState.h" />
+    <ClInclude Include="Source\Graphics\DeferredRendering\DeferredRendering.h" />
+    <ClInclude Include="Source\Graphics\ShadowShading\Shadow.h" />
+    <ClInclude Include="Source\Components\Animation.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lauxlib.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lua.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lua.hpp" />
+    <ClInclude Include="Dependencies\Lua\Include\luaconf.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lualib.h" />
+    <ClInclude Include="Dependencies\Sol\Include\as_args.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\as_returns.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\base_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\bind_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\bytecode.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\call.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\compatibility.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\config.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\config_setup.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\coroutine.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\debug.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\demangle.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\deprecate.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\dump_handler.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\ebco.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\environment.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\error.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\error_handler.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\feature_test.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\forward.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\forward_detail.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_overloaded.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_stateful.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_stateless.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_templated.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\inheritance.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\in_place.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\load_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\lua_table.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\lua_value.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\make_reference.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\map.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\metatable.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\object.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\object_base.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\optional.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\optional_implementation.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\overload.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\pointer_like.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\policies.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\property.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protect.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protected_function.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protected_function_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protected_handler.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\proxy_base.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\raii.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\reference.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\resolve.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\sol.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get_qualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get_unqualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_qualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_unqualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_field.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_get.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_get_qualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_get_unqualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_guard.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_iterator.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_pop.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_probe.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_proxy.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_proxy_base.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_push.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_reference.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\state.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\state_handling.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\state_view.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\string_view.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table_iterator.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table_proxy.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\thread.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\tie.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\trampoline.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\tuple.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\types.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unicode.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unique_usertype_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unsafe_function.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unsafe_function_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\userdata.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_container.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_container_launch.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_proxy.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_storage.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\variadic_args.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\variadic_results.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\wrapper.hpp" />
+    <ClInclude Include="Manager\GameObjectManager.h" />
+    <ClInclude Include="Manager\ObjectFactoryManager.h" />
+    <ClInclude Include="Manager\MemoryManager.h" />
+    <ClInclude Include="Manager\PhysicsManager.h" />
+    <ClInclude Include="Manager\ResourceManager.h" />
+    <ClInclude Include="Manager\ScriptManager.h" />
+    <ClInclude Include="Source\Events\DestroyEvent.h" />
+    <ClInclude Include="Source\Events\Event.h" />
+    <ClInclude Include="Source\Events\MoveEvent.h" />
+    <ClInclude Include="Source\GameStates\GameState.h" />
+    <ClInclude Include="Source\GameStates\PlayState.h" />
+    <ClInclude Include="Source\Graphics\Animation\AnimationClips.h" />
+    <ClInclude Include="Source\Graphics\Animation\AnimationChannel.h" />
+    <ClInclude Include="Source\Graphics\Animation\BoneNode.h" />
+    <ClInclude Include="Source\Graphics\Light.h" />
+    <ClInclude Include="Manager\DXInputManager.h" />
+    <ClInclude Include="Source\Components\Asset.h" />
+    <ClInclude Include="Source\Components\Body.h" />
+    <ClInclude Include="Source\Components\Component.h" />
+    <ClInclude Include="Source\Components\Controller.h" />
+    <ClInclude Include="Source\Components\Transform.h" />
+    <ClInclude Include="Source\Definitions.h" />
+    <ClInclude Include="Source\GameState.h" />
+    <ClInclude Include="Source\Graphics\ReadData.h" />
+    <ClInclude Include="Source\Graphics\Camera.h" />
+    <ClInclude Include="Source\Graphics\DirectXHandler.h" />
+    <ClInclude Include="Source\Graphics\DXObject.h" />
+    <ClInclude Include="Source\Graphics\DXShader.h" />
+    <ClInclude Include="Source\Graphics\DXTexture.h" />
+    <ClInclude Include="Manager\GraphicsManager.h" />
+    <ClInclude Include="Manager\TimerManager.h" />
+    <ClInclude Include="Source\pch.h" />
+    <ClInclude Include="Source\Systems\Systems.h" />
+    <ClInclude Include="Source\Util\Math.h" />
+    <ClInclude Include="Source\Graphics\Shape.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\Util\ShapeX.h" />
+    <ClInclude Include="Source\Util\SpatialGrid.h" />
+    <ClInclude Include="Source\Util\Vector3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Levels\Block.json" />
+    <None Include="Resource\Levels\Box.json" />
+    <None Include="Resource\Levels\Collider.json" />
+    <None Include="Resource\Levels\Cat.json" />
+    <None Include="Resource\Levels\Cylinder.json" />
+    <None Include="Resource\Levels\Disk.json" />
+    <None Include="Resource\Levels\Enemy.json" />
+    <None Include="Resource\Levels\FirePlace.json" />
+    <None Include="Resource\Levels\Fish.json" />
+    <None Include="Resource\Levels\HealthBar.json" />
+    <None Include="Resource\Levels\Heli.json" />
+    <None Include="Resource\Levels\HitBoxH.json" />
+    <None Include="Resource\Levels\LightList.json" />
+    <None Include="Resource\Levels\Nanosuit.json" />
+    <None Include="Resource\Levels\Platform.json" />
+    <None Include="Resource\Levels\Sphere.json" />
+    <None Include="Resource\Levels\Tree.json" />
+    <None Include="Source\Script\Animation.lua" />
+    <None Include="Source\Script\CameraMovement.lua" />
+    <None Include="Source\Script\Controller.lua" />
+    <None Include="Resource\Levels\Nanosuit.json" />
+    <None Include="Resource\Levels\Fish.json" />
+    <None Include="Resource\Levels\HitBoxH.json" />
+    <None Include="Resource\Levels\HealthBar.json" />
+    <None Include="Resource\Levels\Enemy.json" />
+    <None Include="Resource\Levels\ViewBox.json" />
+    <None Include="Resource\Levels\WEnemy.json" />
+    <None Include="Resource\Levels\SpotBox.json" />
+    <None Include="Resource\Levels\DirLight.json" />
+    <None Include="Resource\Levels\SpotLight.json" />
+    <None Include="Resource\Levels\DirectLight.json" />
+    <None Include="Resource\Levels\PointLight.json" />
+    <None Include="Resource\Levels\Seeker.json" />
+    <None Include="Resource\Levels\SeekerBox.json" />
+    <None Include="Resource\Levels\Level2.json" />
+    <None Include="Source\Script\middleclass.lua" />
+    <None Include="Resource\Levels\Bullet.json" />
+    <None Include="Resource\Levels\AiStuff.json" />
+    <None Include="Resource\Levels\P1Goal.json" />
+    <None Include="Resource\Levels\P1Collectible.json" />
+    <None Include="Resource\Levels\Level3.json" />
+    <None Include="Resource\Levels\P3Trap.json" />
+    <None Include="Resource\Levels\TimeBar.json" />
+    <None Include="Resource\Levels\P3Goal.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Script\CameraMovement.lua" />
+    <None Include="Resource\Levels\Bullet.json" />
+    <None Include="Resource\Levels\Bullet.json" />
+    <None Include="Resource\Levels\Player.json" />
+    <None Include="Resource\Levels\Level1.json" />
+  </ItemGroup>
+</Project>

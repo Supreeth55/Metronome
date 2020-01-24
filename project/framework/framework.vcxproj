@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{39E81AD3-7BDE-4D15-96F9-2F7E1CE40E16}</ProjectGuid>
+    <RootNamespace>framework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Dependencies\DirectXTK\Inc;$(SolutionDir)Dependencies\Assimp\include;$(SolutionDir)Dependencies\Sol\Include;$(SolutionDir)Dependencies\Lua\Include;$(SolutionDir)Dependencies\ImGUI;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\DirectXTK\lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(SolutionDir)Dependencies\Lua\Lib;$(SolutionDir)Dependencies\Assimp\lib\x64;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib</LibraryPath>
+    <OutDir>$(SolutionDir)Dependencies\framework\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Dependencies\DirectXTK\Inc;$(SolutionDir)Dependencies\Assimp\include;$(SolutionDir)Dependencies\Sol\Include;$(SolutionDir)Dependencies\Lua\Include;$(SolutionDir)Dependencies\ImGUI;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\DirectXTK\lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(SolutionDir)Dependencies\Lua\Lib;$(SolutionDir)Dependencies\Assimp\lib\x64;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;$(SolutionDir)Dependencies\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib</LibraryPath>
+    <OutDir>$(SolutionDir)Dependencies\framework\lib</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>DirectXTKd.lib;d3d11.lib;dxgi.lib;dxguid.lib;assimp-vc140-mtd.lib;lua-5.3.5_debug.lib;fmodstudioL64_vc.lib;fmodL64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)Dependencies\Assimp\lib\x64\assimp-vc140-mt.dll" "$(OutDir)"
+copy "$(ProjectDir)Dependencies\Lua\Lib\lua-5.3.5.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>DirectXTK.lib;d3d11.lib;dxgi.lib;dxguid.lib;lua-5.3.5_release.lib;assimp-vc140-mt.lib;fmodstudioL64_vc.lib;fmodL64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)Dependencies\Assimp\lib\x64\assimp-vc140-mt.dll" "$(OutDir)"
+copy "$(ProjectDir)Dependencies\Lua\Lib\lua-5.3.5.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <FxCompile>
+      <DisableOptimizations>true</DisableOptimizations>
+    </FxCompile>
+    <FxCompile>
+      <EnableDebuggingInformation>true</EnableDebuggingInformation>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependencies\ImGUI\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_impl_dx11.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_impl_win32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGUI\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\jsoncpp\jsoncpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Manager\GameStateManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\AudioManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\ImGUIManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\LevelEditor.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Audio\AudioSystem.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\LightDetail.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Block.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Bullet.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Collider.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Cat.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\DirectLight.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Enemy.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Entity.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\FirePlace.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Fish.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\HealthBar.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Heli.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\HitboxH.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\HitBoxV.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Nanosuit.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Platform.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Player.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\PointLight.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Seeker.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\SeekerBox.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P1Collectible.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P1Goal.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P3Goal.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\P3Trap.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\SpotBox.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\SpotLight.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\TimeBar.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Tree.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\ViewBox.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\WEnemy.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\GameStates\PauseState.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DeferredRendering\DeferredRendering.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\ShadowShading\Shadow.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Animation.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\CollisionManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\GameObjectManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\MemoryManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\ObjectFactoryManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\PhysicsManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\ResourceManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\ScriptManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Events\DestroyEvent.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Events\MoveEvent.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\GameStates\PlayState.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation\AnimationClips.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation\AnimationChannel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation\BoneNode.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Light.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\DXInputManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Asset.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Body.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Component.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Controller.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Transform.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Camera.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DirectXHandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DXObject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DXShader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\DXTexture.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\GraphicsManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Manager\TimerManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Source/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Source/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Util\Math.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Shape.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Engine.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Util\ShapeX.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Util\SpatialGrid.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Util\Vector3D.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\ImGUI\imconfig.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui_impl_dx11.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui_impl_win32.h" />
+    <ClInclude Include="Dependencies\ImGUI\imgui_internal.h" />
+    <ClInclude Include="Dependencies\ImGUI\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\ImGUI\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\ImGUI\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\jsoncpp\json\json-forwards.h" />
+    <ClInclude Include="Dependencies\jsoncpp\json\json.h" />
+    <ClInclude Include="EngineLibrary.h" />
+    <ClInclude Include="Manager\GameStateManager.h" />
+    <ClInclude Include="Manager\AudioManager.h" />
+    <ClInclude Include="Manager\ImGUIManager.h" />
+    <ClInclude Include="Manager\LevelEditor.h" />
+    <ClInclude Include="Resource\Levels\HitBoxV.json" />
+    <ClInclude Include="Source\Audio\AudioSystem.h" />
+    <ClInclude Include="Source\Components\LightDetail.h" />
+    <ClInclude Include="Source\Entity\Block.h" />
+    <ClInclude Include="Source\Entity\Bullet.h" />
+    <ClInclude Include="Source\Entity\Cat.h" />
+    <ClInclude Include="Source\Entity\Collider.h" />
+    <ClInclude Include="Source\Entity\DirectLight.h" />
+    <ClInclude Include="Source\Entity\Enemy.h" />
+    <ClInclude Include="Source\Entity\Entity.h" />
+    <ClInclude Include="Source\Entity\FirePlace.h" />
+    <ClInclude Include="Source\Entity\Fish.h" />
+    <ClInclude Include="Source\Entity\HealthBar.h" />
+    <ClInclude Include="Source\Entity\Heli.h" />
+    <ClInclude Include="Source\Entity\HitboxH.h" />
+    <ClInclude Include="Source\Entity\HitBoxV.h" />
+    <ClInclude Include="Source\Entity\Nanosuit.h" />
+    <ClInclude Include="Source\Entity\P1Collectible.h" />
+    <ClInclude Include="Source\Entity\P1Goal.h" />
+    <ClInclude Include="Source\Entity\P3Goal.h" />
+    <ClInclude Include="Source\Entity\P3Trap.h" />
+    <ClInclude Include="Source\Entity\Platform.h" />
+    <ClInclude Include="Source\Entity\Player.h" />
+    <ClInclude Include="Manager\CollisionManager.h" />
+    <ClInclude Include="Source\Entity\PointLight.h" />
+    <ClInclude Include="Source\Entity\Seeker.h" />
+    <ClInclude Include="Source\Entity\SeekerBox.h" />
+    <ClInclude Include="Source\Entity\SpotBox.h" />
+    <ClInclude Include="Source\Entity\SpotLight.h" />
+    <ClInclude Include="Source\Entity\TimeBar.h" />
+    <ClInclude Include="Source\Entity\Tree.h" />
+    <ClInclude Include="Source\Entity\ViewBox.h" />
+    <ClInclude Include="Source\Entity\WEnemy.h" />
+    <ClInclude Include="Source\GameStates\PauseState.h" />
+    <ClInclude Include="Source\Graphics\DeferredRendering\DeferredRendering.h" />
+    <ClInclude Include="Source\Graphics\ShadowShading\Shadow.h" />
+    <ClInclude Include="Source\Components\Animation.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lauxlib.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lua.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lua.hpp" />
+    <ClInclude Include="Dependencies\Lua\Include\luaconf.h" />
+    <ClInclude Include="Dependencies\Lua\Include\lualib.h" />
+    <ClInclude Include="Dependencies\Sol\Include\as_args.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\as_returns.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\base_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\bind_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\bytecode.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\call.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\compatibility.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\config.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\config_setup.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\coroutine.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\debug.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\demangle.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\deprecate.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\dump_handler.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\ebco.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\environment.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\error.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\error_handler.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\feature_test.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\forward.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\forward_detail.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_overloaded.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_stateful.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_stateless.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\function_types_templated.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\inheritance.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\in_place.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\load_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\lua_table.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\lua_value.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\make_reference.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\map.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\metatable.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\object.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\object_base.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\optional.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\optional_implementation.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\overload.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\pointer_like.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\policies.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\property.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protect.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protected_function.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protected_function_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\protected_handler.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\proxy_base.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\raii.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\reference.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\resolve.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\sol.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get_qualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_get_unqualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_qualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_check_unqualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_field.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_get.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_get_qualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_get_unqualified.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_guard.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_iterator.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_pop.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_probe.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_proxy.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_proxy_base.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_push.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\stack_reference.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\state.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\state_handling.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\state_view.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\string_view.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table_iterator.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\table_proxy.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\thread.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\tie.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\trampoline.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\tuple.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\types.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unicode.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unique_usertype_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unsafe_function.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\unsafe_function_result.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\userdata.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_container.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_container_launch.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_core.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_proxy.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_storage.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\usertype_traits.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\variadic_args.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\variadic_results.hpp" />
+    <ClInclude Include="Dependencies\Sol\Include\wrapper.hpp" />
+    <ClInclude Include="Manager\GameObjectManager.h" />
+    <ClInclude Include="Manager\ObjectFactoryManager.h" />
+    <ClInclude Include="Manager\MemoryManager.h" />
+    <ClInclude Include="Manager\PhysicsManager.h" />
+    <ClInclude Include="Manager\ResourceManager.h" />
+    <ClInclude Include="Manager\ScriptManager.h" />
+    <ClInclude Include="Source\Events\DestroyEvent.h" />
+    <ClInclude Include="Source\Events\Event.h" />
+    <ClInclude Include="Source\Events\MoveEvent.h" />
+    <ClInclude Include="Source\GameStates\GameState.h" />
+    <ClInclude Include="Source\GameStates\PlayState.h" />
+    <ClInclude Include="Source\Graphics\Animation\AnimationClips.h" />
+    <ClInclude Include="Source\Graphics\Animation\AnimationChannel.h" />
+    <ClInclude Include="Source\Graphics\Animation\BoneNode.h" />
+    <ClInclude Include="Source\Graphics\Light.h" />
+    <ClInclude Include="Manager\DXInputManager.h" />
+    <ClInclude Include="Source\Components\Asset.h" />
+    <ClInclude Include="Source\Components\Body.h" />
+    <ClInclude Include="Source\Components\Component.h" />
+    <ClInclude Include="Source\Components\Controller.h" />
+    <ClInclude Include="Source\Components\Transform.h" />
+    <ClInclude Include="Source\Definitions.h" />
+    <ClInclude Include="Source\GameState.h" />
+    <ClInclude Include="Source\Graphics\ReadData.h" />
+    <ClInclude Include="Source\Graphics\Camera.h" />
+    <ClInclude Include="Source\Graphics\DirectXHandler.h" />
+    <ClInclude Include="Source\Graphics\DXObject.h" />
+    <ClInclude Include="Source\Graphics\DXShader.h" />
+    <ClInclude Include="Source\Graphics\DXTexture.h" />
+    <ClInclude Include="Manager\GraphicsManager.h" />
+    <ClInclude Include="Manager\TimerManager.h" />
+    <ClInclude Include="Source\pch.h" />
+    <ClInclude Include="Source\Systems\Systems.h" />
+    <ClInclude Include="Source\Util\Math.h" />
+    <ClInclude Include="Source\Graphics\Shape.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\Util\ShapeX.h" />
+    <ClInclude Include="Source\Util\SpatialGrid.h" />
+    <ClInclude Include="Source\Util\Vector3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resource\Shader\AnimationVShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\DeferredAmbientPShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\DeferredVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\DefferedGbufferPShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\DefferedLightPShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableDebuggingInformation>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\ShadowPShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\SimplePShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\SimpleVShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Levels\Block.json" />
+    <None Include="Resource\Levels\Box.json" />
+    <None Include="Resource\Levels\Collider.json" />
+    <None Include="Resource\Levels\Cat.json" />
+    <None Include="Resource\Levels\Cylinder.json" />
+    <None Include="Resource\Levels\DirectLight.json" />
+    <None Include="Resource\Levels\Disk.json" />
+    <None Include="Resource\Levels\Enemy.json" />
+    <None Include="Resource\Levels\FirePlace.json" />
+    <None Include="Resource\Levels\Fish.json" />
+    <None Include="Resource\Levels\HealthBar.json" />
+    <None Include="Resource\Levels\Heli.json" />
+    <None Include="Resource\Levels\HitBoxH.json" />
+    <None Include="Resource\Levels\Level1.json" />
+    <None Include="Resource\Levels\Level3.json" />
+    <None Include="Resource\Levels\LightList.json" />
+    <None Include="Resource\Levels\DirLight.json" />
+    <None Include="Resource\Levels\Nanosuit.json" />
+    <None Include="Resource\Levels\P1Collectible.json" />
+    <None Include="Resource\Levels\P1Goal.json" />
+    <None Include="Resource\Levels\P3Goal.json" />
+    <None Include="Resource\Levels\P3Trap.json" />
+    <None Include="Resource\Levels\Platform.json" />
+    <None Include="Resource\Levels\PointLight.json" />
+    <None Include="Resource\Levels\Seeker.json" />
+    <None Include="Resource\Levels\SeekerBox.json" />
+    <None Include="Resource\Levels\Sphere.json" />
+    <None Include="Resource\Levels\TimeBar.json" />
+    <None Include="Resource\Levels\SpotBox.json" />
+    <None Include="Resource\Levels\SpotLight.json" />
+    <None Include="Resource\Levels\Tree.json" />
+    <None Include="Resource\Levels\ViewBox.json" />
+    <None Include="Resource\Levels\WEnemy.json" />
+    <None Include="Source\Script\Animation.lua" />
+    <None Include="Source\Script\CameraMovement.lua" />
+    <None Include="Source\Script\Controller.lua" />
+    <None Include="Source\Script\middleclass.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Levels\Bullet.json" />
+    <None Include="Resource\Levels\Level2.json" />
+    <None Include="Resource\Levels\AiStuff.json" />
+    <None Include="Resource\Levels\Player.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

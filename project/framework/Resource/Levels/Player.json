@@ -1,0 +1,36 @@
+{
+  "Player": {
+    "Transform": {
+      "Scale": [ 2.0, 2.0, 2.0 ],
+      "Translate": [ 0.0, 0.0, 8.0 ]
+    },
+    "Controller": {
+
+    },
+    "Asset": {
+      "Shape": "FBX",
+      "Model": "SambaDancing.fbx",
+      "Rotated": true,
+      "MaterialID": 0
+    },
+    "Body": {
+      "BScale": [ 0.70, 1.0, 2.5 ],
+      "Offset": [ 0.0, 0.0, -2.5 ],
+      "ShapeX": "AABB",
+      "IsPhysicsObject": true
+    },
+    "Animation": {
+      "AnimationList": [
+        [ "mixamo.com", 1.0, 546.0, 30.0 ]
+      ],
+      "AnimationAddtionalList": [
+        [ "Hip Hop Dancing.fbx", "dance2", 1.0, 500.0, 30.0 ],
+        [ "Running.fbx", "run", 1.0, 19.0, 30.0 ],
+        [ "Rolling.fbx", "roll", 1.0, 35.0, 30.0 ],
+        [ "Idle.fbx", "idle", 1.0, 59.0, 30.0 ],
+        [ "Horizontal attack.fbx", "hatk", 1.0, 72.0, 30.0 ],
+        [ "Vertical attack.fbx", "vatk", 1.0, 68.0, 30.0 ]
+      ]
+    }
+  }
+}

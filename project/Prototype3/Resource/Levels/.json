@@ -1,0 +1,2127 @@
+{
+	"" : 
+	[
+		{
+			"Asset" : 
+			{
+				"Shape" : "Torus"
+			},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					2.0,
+					-5.0,
+					8.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"Shape" : "Box"
+			},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-4.0,
+					-5.0,
+					8.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"Shape" : "Sphere"
+			},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-6.0,
+					-5.0,
+					8.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"Shape" : "Cylinder"
+			},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					-5.0,
+					8.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					6.5,
+					30.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					13.0,
+					60.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					0.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					5.0,
+					2.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					10.0,
+					5.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					0.0,
+					6.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					5.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					10.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					3.0,
+					5.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					5.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					10.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					4.0,
+					4.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					5.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					10.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					5.0,
+					3.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					5.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					10.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					6.0,
+					2.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					10.0,
+					10.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					20.0,
+					20.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					17.0,
+					0.0,
+					0.10000000149011612
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					10.0,
+					10.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					20.0,
+					20.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-17.0,
+					0.0,
+					0.10000000149011612
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					10.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					20.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-17.0,
+					-10.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					10.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					20.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-17.0,
+					10.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					10.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					20.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-27.0,
+					0.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					10.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					20.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-7.0,
+					0.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					20.0,
+					0.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					10.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					20.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					17.0,
+					10.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					10.0,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					20.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					17.0,
+					-10.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					10.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					20.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					27.0,
+					0.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					10.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					20.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					7.0,
+					0.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					15.0,
+					5.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					2.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					20.0,
+					-7.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					2.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					5.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					20.0,
+					-5.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					25.0,
+					7.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					10.0,
+					7.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					1.0,
+					1.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					10.0,
+					-6.0,
+					1.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					5.0,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					18.737321853637695,
+					1.8327208757400513,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					-2.3333334922790527,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					13.14022159576416,
+					6.8327198028564453,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					3.5,
+					-3.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					13.806198120117188,
+					0.71913671493530273,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					3.5,
+					3.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					25.829050064086914,
+					3.2586815357208252,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					0.0,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					12.0,
+					6.8327198028564453,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					-3.5,
+					-3.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					15.241977691650391,
+					-7.8290524482727051,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					3.0,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					7.8167815208435059,
+					6.8327198028564453,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					-8.5,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					12.248614311218262,
+					-3.167280912399292,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.25,
+					0.25,
+					0.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 2.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					8.5,
+					-0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					8.9918909072875977,
+					8.6773386001586914,
+					0.85000002384185791
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 10.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					1.1666666269302368,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					22.870573043823242,
+					6.8327198028564453,
+					1.6000000238418579
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					1.0,
+					1.0,
+					1.0
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 10.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					0.0,
+					0.5,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					15.0,
+					-5.1672801971435547,
+					1.6000000238418579
+				]
+			}
+		},
+		{
+			"Animation" : {},
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.34999999403953552,
+					0.5,
+					1.25
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 1.0,
+				"MaterialID" : 0,
+				"Model" : "gh_sample_animation.fbx",
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					-1.25
+				],
+				"Rotated" : true,
+				"Shape" : "FBX",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"Controller" : {},
+			"DataFile" : "Player",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					25.0,
+					1.5
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 0,
+				"Model" : "fireplace_room.obj",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "FirePlace",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					25.0,
+					25.0,
+					25.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					25.0,
+					8.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					1.5,
+					1.5,
+					1.5
+				],
+				"IsPhysicsObject" : true,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.0,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Collider",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					3.0,
+					3.0,
+					3.0
+				],
+				"Translate" : 
+				[
+					-17.0,
+					0.0,
+					2.0999999046325684
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					7.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					15.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.40000000596046448,
+					-45.0,
+					2.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					7.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					15.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					-7.0,
+					-37.5,
+					2.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					0.5,
+					7.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.0,
+					15.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					7.0,
+					-37.5,
+					2.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					7.5,
+					0.5,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					15.0,
+					1.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.40000000596046448,
+					-30.0,
+					2.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"BScale" : 
+				[
+					6.0,
+					7.0,
+					0.5
+				],
+				"IsPhysicsObject" : false,
+				"Mass" : 1.0,
+				"Offset" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Shape" : "Box",
+				"ShapeX" : 0.80000001192092896,
+				"Velocity" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				]
+			},
+			"Body" : {},
+			"DataFile" : "Platform",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					12.0,
+					14.0,
+					1.0
+				],
+				"Translate" : 
+				[
+					0.30000001192092896,
+					-37.5,
+					2.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 0,
+				"Model" : "helicopter.fbx",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Heli",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					10.0,
+					10.0,
+					10.0
+				],
+				"Translate" : 
+				[
+					0.40000000596046448,
+					-40.0,
+					15.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 0,
+				"Model" : "nanosuit.obj",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Nanosuit",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					4.0,
+					4.0,
+					4.0
+				],
+				"Translate" : 
+				[
+					0.40000000596046448,
+					-33.0,
+					4.5
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 2,
+				"Model" : "nanosuit.obj",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Nanosuit",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					4.0,
+					4.0,
+					4.0
+				],
+				"Translate" : 
+				[
+					0.40000000596046448,
+					-40.0,
+					4.5
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 1,
+				"Model" : "nanosuit.obj",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Nanosuit",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					4.0,
+					4.0,
+					4.0
+				],
+				"Translate" : 
+				[
+					0.40000000596046448,
+					-36.0,
+					4.5
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 0,
+				"Model" : "Cat.fbx",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Cat",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					4.0,
+					-33.0,
+					3.25
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 0,
+				"Model" : "fish.fbx",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Fish",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					5.0,
+					5.0
+				],
+				"Translate" : 
+				[
+					4.0,
+					-40.0,
+					3.25
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 2,
+				"Model" : "palm_tree_5.obj",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Tree",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					5.0,
+					5.0
+				],
+				"Translate" : 
+				[
+					-3.0,
+					-33.0,
+					5.0
+				]
+			}
+		},
+		{
+			"Asset" : 
+			{
+				"MaterialID" : 0,
+				"Model" : "palm_tree_5.obj",
+				"Rotated" : true,
+				"Shape" : "Obj"
+			},
+			"DataFile" : "Tree",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					5.0,
+					5.0
+				],
+				"Translate" : 
+				[
+					-3.0,
+					-37.0,
+					5.0
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+  "Nanosuit": {
+    "Transform": {
+      "Scale": [ 4.0, 4.0, 4.0 ],
+      "Translate": [ 0.0, 0.0, 0.0 ]
+    },
+    "Asset": {
+      "Shape": "Obj",
+      "Model": "nanosuit.obj",
+      "Rotated": true,
+      "MaterialID": 0
+    }
+  }
+}

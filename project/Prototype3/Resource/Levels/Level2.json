@@ -1,0 +1,233 @@
+{
+  "Level2": [
+    {
+      "DataFile": "HitBoxH",
+      "Transform": {
+        "Translate": [ 0.0, 0.0, 15.0 ]
+      }
+    },
+    {
+      "DataFile": "HitBoxV",
+      "Transform": {
+        "Translate": [ 5.0, 0.0, 15.0 ]
+      }
+    },
+    {
+      "DataFile": "Player",
+      "Transform": {
+        "Translate": [ -19.0, -32.0, 5.0 ]
+      }
+    },
+
+
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, 0.0, 2.0 ],
+        "Scale": [ 75.0, 75.0, 1.0 ]
+      },
+      "Body": {
+        "BScale": [ 75.0, 75.0, 1.0 ]
+      },
+      "Asset": {
+        "Diffuse": [ 0.0, 1.0, 0.0 ]
+      }
+    },
+    {
+      "DataFile": "WEnemy",
+      "Transform": {
+        "Translate": [ 30.0, 20.5, 15.0 ]
+      }
+
+    },
+    {
+      "DataFile": "WEnemy",
+      "Transform": {
+        "Translate": [ -32.0, 29.0, 3.0 ]
+      }
+
+    },
+    {
+      "DataFile": "Seeker",
+      "Transform": {
+        "Translate": [ -13.0, 9.0, 3.0 ]
+      }
+
+    },
+    {
+      "DataFile": "Seeker",
+      "Transform": {
+        "Translate": [ 29.0, -20.0, 3.0 ]
+      }
+
+    },
+    {
+      "DataFile": "SeekerBox",
+      "Transform": {
+        "Translate": [ -23.0, -8.0, 3.0 ]
+      }
+
+    },
+    {
+      "DataFile": "SeekerBox",
+      "Transform": {
+        "Translate": [ 12.0, -8.0, 4.5 ]
+      },
+      "Body": {
+        "BScale": [ 40.0, 35.0, 1.0 ]
+      }
+
+    },
+    {
+      "DataFile": "WEnemy",
+      "Transform": {
+        "Translate": [ 30.0, -10.0, 3.0 ]
+      }
+
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -37.575, 0.0, 4.5 ],
+        "Scale": [ 1.0, 75.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 1.0, 75.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 37.875, 0.0, 4.5 ],
+        "Scale": [ 1.0, 75.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 1.0, 75.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, -37.875, 4.5 ],
+        "Scale": [ 75.0, 1.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 75.0, 1.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, 37.875, 4.5 ],
+        "Scale": [ 75.0, 1.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 75.0, 1.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -27.3, -28.5, 4.5 ],
+        "Scale": [ 20.0, 1.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 20.0, 1.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, -28.5, 4.5 ],
+        "Scale": [ 20.0, 1.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 20.0, 1.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 27.3, -28.5, 4.5 ],
+        "Scale": [ 20.0, 1.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 20.0, 1.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ -10.5, -12.7, 4.5 ],
+        "Scale": [ 1.0, 50.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 1.0, 50.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+        "Translate": [ 0.0, 13.0, 4.5 ],
+        "Scale": [ 45.0, 1.0, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 45.0, 1.0, 6.0 ]
+      }
+    },
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ -32.4, -18.0, 4.5 ]
+      }
+    },
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ -15.4, -8.0, 4.5 ]
+      }
+    },
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ -32.4, 3.0, 4.5 ]
+      }
+    },
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ 16.0, -20.0, 4.5 ]
+      }
+    },
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ 12.0, -20.0, 4.5 ]
+      }
+    },
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ 16.0, 2.0, 4.5 ]
+      }
+    },
+
+    {
+      "DataFile": "SpotBox",
+      "Transform": {
+        "Translate": [ 12.0, 2.0, 4.5 ]
+      }
+    },
+    {
+      "DataFile": "Platform",
+      "Transform": {
+
+        "Translate": [ 17.0, -33.1, 4.5 ],
+        "Scale": [ 0.5, 8.2, 6.0 ]
+      },
+      "Body": {
+        "BScale": [ 0.5, 8.2, 6.0 ]
+      }
+    }
+  ]
+}

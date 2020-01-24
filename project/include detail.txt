@@ -1,0 +1,13 @@
+
+Utilities\bin\x86;
+Include;
+Lib\x86;
+
+d3d11.lib
+d3dx11.lib
+D3DCompiler.lib
+dxerr.lib
+dxgi.lib
+dxguid.lib
+
+

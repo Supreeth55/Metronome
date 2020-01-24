@@ -1,0 +1,15 @@
+{
+  "HitBoxH": {
+    "Transform": {
+      "Scale": [ 1.0, 1.0, 1.0 ],
+      "Translate": [ 0.0, 0.0, 0.0 ]
+    },
+    
+    "Body": {
+      "BScale": [ 1.0, 0.25, 0.25 ],
+      "ShapeX": "AABB",
+      "IsPhysicsObject": false,
+      "Friction": 0.80
+    }
+  }
+}
